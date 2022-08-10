@@ -6,8 +6,8 @@ export default function Card({name, image, status, species}){
         <div className="card">
             
             <img className='pj_img' src={image} alt={name}></img>
-            <h3>{name}</h3>
-            <p>{species}</p>
+            <h3 className="name">{name}</h3>
+            <p className="specie">{species}</p>
             <p className="status">{status}</p>
         </div>
     )

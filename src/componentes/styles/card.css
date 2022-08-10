@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
 .card{
     width: 300px;
@@ -27,4 +28,20 @@
     mix-blend-mode:overlay;
     font-family:'Frijole', cursive;
     
+}
+
+.name{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 20px;
+    color: rgb(62, 210, 221);
+    -webkit-text-stroke: 0.2px black;
+}
+
+.specie{
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-family: 'Gamja Flower', cursive;
 }
