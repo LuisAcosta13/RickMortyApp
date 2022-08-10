@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
+import Cards from './componentes/cards';
+import Banner from './componentes/banner';
 
 function App() {
+
+  const [personajes, setPersonajes] = useState([])
+
+  fetch('https://rickandmortyapi.com/api/character')
+  .then(response => response.json())
+  .then(data => {
+  setPersonajes(data.results)
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner/>
+      <Cards personajes={personajes}/>
     </div>
   );
 }

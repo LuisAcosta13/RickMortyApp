@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+.card{
+    width: 300px;
+    background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pj_img{
+    width: 250px;
+    border-style: groove;
+    border-radius: 7px;
+}
+
+.status{
+    color: red;
+    text-decoration: solid;
+    font-size: 40px;  
+    border-radius: 5px;
+    rotate: -7deg;
+    margin: 10px;
+    box-shadow:inset 0px 0px 0px 10px red;
+    mix-blend-mode:overlay;
+    font-family:'Frijole', cursive;
+    
+}
