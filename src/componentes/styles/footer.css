@@ -1,0 +1,19 @@
+.footer{
+    position: relative;
+    bottom: -50px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgb(62, 210, 221);
+    -webkit-text-stroke: 1.3px black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(62, 210, 221);
+    -webkit-text-stroke: 1.3px black;
+}

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './App.css';
 import Cards from './componentes/cards';
 import Banner from './componentes/banner';
+import Footer from './componentes/footer';
 
 function App() {
 
@@ -30,9 +31,10 @@ function App() {
     <div className='render'>
       <Banner/>
       <div id='button'>
-      <button type='button'  onClick={() => active()}>INGRESAR</button>
+      <button type='button'  onClick={() => active()}>ACCESS</button>
       </div>
       <Cards personajes={personajes}/>
+      <Footer/>
     </div>
   );
 }
