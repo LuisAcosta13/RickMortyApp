@@ -20,12 +20,17 @@ function App() {
     elem.style.display = 'none'
   }
 
+  function active(){
+    setTimeout(function(){
+      hide('button'); showThemAll()
+    }, 1000)
+  }
 
   return (
     <div className='render'>
       <Banner/>
       <div id='button'>
-      <button type='button'  onClick={setTimeout(() => {showThemAll(); hide('button')}, 1000)}>Mostrar todos</button>
+      <button type='button'  onClick={() => active()}>INGRESAR</button>
       </div>
       <Cards personajes={personajes}/>
     </div>
