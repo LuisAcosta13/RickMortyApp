@@ -3,6 +3,7 @@ import './styles/card.css'
 
 export default function Card({name, image, status, species, location, gender}){
     return(
+        <div className="wrap">
         <div className="card">
             <div className="front">
             
@@ -19,6 +20,7 @@ export default function Card({name, image, status, species, location, gender}){
                 <li>Last known location: {location.name}</li>
                 </ul>
             </div>
+        </div>
         </div>
     )
     

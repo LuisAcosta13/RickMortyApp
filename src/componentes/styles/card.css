@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
-.card{
+
+.wrap{
+    perspective: 1500;
+    -webkit-perspective: 1500;
     width: 20%;
     height: 100%;
     text-align: center;
     display: block;
     padding: 10px;
     border-radius: 10px;
-    position: relative;
+}
+
+.card{
     transform-style: preserve-3d; /*muy importante!! */
     transition: 2s ease;
 }
@@ -16,6 +21,7 @@
 .card:hover{
     transform: rotateY(180deg);
     transition: 2s ease;
+    
 }
 
 .front{
