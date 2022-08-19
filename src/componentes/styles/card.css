@@ -2,13 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
 .card{
-    width: 300px;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d; /*muy importante!! */
+    transition: 2s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+    transition: 2s ease;
+}
+
+.front{
+    width: 100%;
+    height: 100%;
     background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
     text-align: center;
     display: block;
     padding: 10px;
-    margin: 10px;
     border-radius: 10px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .pj_img{
@@ -20,28 +39,52 @@
 .status{
     color: red;
     text-decoration: solid;
-    font-size: 40px;  
+    font-size: 200%;  
     border-radius: 5px;
     rotate: -7deg;
-    margin: 10px;
+    margin: 20px;
     box-shadow:inset 0px 0px 0px 10px red;
     mix-blend-mode:overlay;
     font-family:'Frijole', cursive;
-    
 }
 
 .name{
     font-family: 'Gamja Flower', cursive;
-    font-size: 40px;
+    font-size: 200%;
     margin: 0px;
     margin-top: 20px;
     color: rgb(62, 210, 221);
     -webkit-text-stroke: 0.2px black;
 }
 
-.specie{
+/* .specie{
     font-size: 30px;
     margin: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: 'Gamja Flower', cursive;
+} */
+
+.back{
+    width: 100%;
+    height: 96%;
+    position: absolute;
+    top: 9px;
+    left: -10px;
+    
+    background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
+    border-radius: 10px;
+    
+    font-family: 'Gamja Flower', cursive;
+
+    font-size: 25px;
+
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.list{
+    text-align: left;
+    position: relative;
+    top: -25%;
 }
