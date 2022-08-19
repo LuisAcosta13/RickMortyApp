@@ -49,7 +49,7 @@ function App() {
       </div>
       <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext}/>
       <Cards personajes={personajes}/>
-      <Pagination prev={info.prev} next={info.next}/>
+      <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext}/>
       <Footer/>
     </div>
   );
