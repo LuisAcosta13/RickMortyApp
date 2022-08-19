@@ -12,3 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes color-change {
+
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}

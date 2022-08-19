@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prev{
+    font-size: 100%;
+    font-weight: 1000;
+    font-family: 'Gamja Flower', cursive;
+    background-color: red;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    font-size: 100%;
+    text-align: center;
+
+}
+.next{
+    font-size: 100%;
+    font-weight: 1000;
+    font-family: 'Gamja Flower', cursive;
+    background-color: red;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    
+    text-align: center;
+}
