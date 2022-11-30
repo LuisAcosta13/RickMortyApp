@@ -5,7 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(164, 198, 159);
+  /* background-color:rgb(164, 198, 159); */
+  background-image: url(https://wallpapers.com/images/hd/rick-and-morty-unamused-rick-agpuysmhk3lhdl4p.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 code {

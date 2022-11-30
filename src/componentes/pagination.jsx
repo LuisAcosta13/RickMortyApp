@@ -12,10 +12,10 @@ export default function Pagination({prev, next, onPrevious, onNext}){
     }
 
     return(
-         <nav>
-            {prev ? <button className="prev" onClick={handlePrevious}>Previous</button>:null}
+         <nav className="navigation">
+            {prev ? <button className="prev" onClick={handlePrevious}>◂</button>:null}
             
-            {next ? <button className="next" onClick={handleNext}>Next</button> : null}
+            {next ? <button className="next" onClick={handleNext}>▸</button> : null}
          </nav>
     )
 }

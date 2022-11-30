@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
-
 .wrap{
     perspective: 1500;
     -webkit-perspective: 1500;
     width: 20%;
-    height: 100%;
+    min-width: 200px;
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -25,42 +24,58 @@
 }
 
 .front{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
+    min-width: 200px;
+    max-width: 100%;
+    min-height: 350px;
+    max-height: 350px;
     text-align: center;
     display: block;
     padding: 10px;
     border-radius: 10px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
+    -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
 }
 
 .pj_img{
-    width: 250px;
+    width: 100%;
     border-style: groove;
     border-radius: 7px;
 }
 
 .status{
-    color: red;
+    position: absolute;
+    bottom: 82%;
+    color: whitesmoke;
+    background-color: red;
     text-decoration: solid;
-    font-size: 200%;  
+    font-size: 100%;
+    margin-left: 2%;
+    width: 20%;
     border-radius: 5px;
-    rotate: -7deg;
-    margin: 20px;
-    box-shadow:inset 0px 0px 0px 10px red;
-    mix-blend-mode:overlay;
-    font-family:'Frijole', cursive;
+    /* rotate: -10deg;*/
+    padding: 2.5%;
+    font-family: 'Gamja Flower', cursive;
+    /* box-shadow:inset 0px 0px 0px 8px red;
+    mix-blend-mode:overlay; */
+    /* font-family:'Frijole', cursive; */
 }
 
 .name{
     font-family: 'Gamja Flower', cursive;
-    font-size: 200%;
-    margin: 0px;
-    margin-top: 20px;
+    font-size: 25px;
+    max-height: 10%;
+    margin: 0%;
     color: rgb(62, 210, 221);
     -webkit-text-stroke: 0.2px black;
+}
+
+.location{
+    margin: 0%;
+    font-family: 'Gamja Flower', cursive;
 }
 
 /* .specie{
@@ -75,22 +90,29 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left: 0; 
     background: linear-gradient(145deg, white, rgb(191, 191, 191), rgb(120, 122, 124));
     border-radius: 10px;
-    
     font-family: 'Gamja Flower', cursive;
-
     font-size: 25px;
-
     transform: rotateY(180deg);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px -1px rgba(0,0,0,0.75);
 }
 
 .list{
     text-align: left;
-    position: relative;
-    top: -25%;
+}
+
+.detailButton{
+    width: 50%;
+    height: 10%;
+    font-size: 25px;
+    font-family: 'Gamja Flower', cursive;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 5px;
 }

@@ -1,0 +1,44 @@
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gamja Flower', cursive;
+    min-height: 100vh;
+}
+
+.detailName{
+    font-size: 500%;
+    max-height: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: rgb(62, 210, 221);
+    -webkit-text-stroke: 0.2px black;
+}
+
+.detailImg{
+    margin-top: 0%;
+    border-style: ridge;
+}
+
+.detailInfo{
+    font-size: 30px;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black;
+}
+
+/* .detailStatus{
+    width: 200px;
+    text-decoration: solid;
+    font-size: 250%;
+    border-radius: 5px;
+    padding: 3.5%;
+    position: relative;
+    left: 30%;
+    top: -200px;
+    color: red;
+    box-shadow:inset 0px 0px 0px 20px red;
+    mix-blend-mode:overlay;
+    font-family:'Frijole', cursive; 
+    rotate: -20deg;
+    z-index: 10;
+} */
